@@ -1,0 +1,77 @@
+/**index.wxss**/
+.head {
+  color: #fff;
+}
+.head .info {
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head .main .temperature{
+  padding-bottom: 16rpx;
+  display: flex;
+  justify-content: center;
+  font-size: 120rpx;
+}
+.head .main .more-info {
+  padding: 50rpx 140rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .more-info > view {
+  width:40%;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+.main .hourly {
+  height: 160rpx;
+  padding: 20rpx 20rpx 40rpx;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.hourly .wrap {
+  width: 1440px;
+}
+.hourly .hour {
+  width: 120rpx;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 26rpx;
+  display: inline-block;
+}
+.hourly image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.suggestion>view{
+  padding: 40rpx 20rpx;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.suggestion image{
+  width: 100rpx;
+  height: 100rpx;
+  opacity: 0.5;
+}
+.suggestion .detail {
+  text-align: left;
+  width: 80%;
+}
+.suggestion .detail .title {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.suggestion .detail .description {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 1.2;
+}

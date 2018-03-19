@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3a94d2",
+    "navigationBarTitleText": "天气预报",
+    "backgroundColor": "#ccccc",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "今日",
+        "iconPath": "./image/today.png",
+        "selectedIconPath": "./image/today-select.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "近期",
+        "iconPath": "./image/future.png",
+        "selectedIconPath": "./image/future-select.png"
+      }
+    ],
+    "borderStyle": "#ff00ff",
+    "backgroundColor": "#fff",
+    "color": "#888",
+    "selectedColor": "#3a94d2"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

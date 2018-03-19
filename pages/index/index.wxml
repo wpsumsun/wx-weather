@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<scroll-view scroll-y class="page">
+  <view class="head" style="background-image: url({{weather.bg}})">
+    <view class="info">
+      <text class="city">{{ weather.city_name }}</text>
+      <text class="last-update">{{ weather.format_last_update }}</text>
+    </view>
+    <view class="main">
+      <view class="temperature">
+        {{ weather.now.temperature }}
+        <text>°C</text>
+      </view>
+      <view class="more-info">
+        <view class="pm">PM25 {{ weather.now.air_quality.pm25 }}{{ weather.now.air_quality.quality }}</view>
+        <view class="wind-direction">风向 {{ weather.now.wind_direction }}</view>
+        <view class="wind-power">风力 {{ weather.now.wind_scale }}</view>
+        <view class="humidity">湿度 {{ weather.now.humidity }}</view>
+      </view>
+      <scroll-view scroll-x class="hourly">
+        <view class="wrap">
+          <view class="hour" wx:for="{{ hourly }}" wx:for-item="item">
+            <view>{{ item.format_time }}</view>
+            <image src="{{ item.img }}" />
+            <view>{{ item.temperature }}°</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="suggestion">
+    <view class="car_washing" wx:for="{{ weather.suggestiontype }}" wx:for-item="item">
+      <image src="../../image/background/{{ item }}.png" />
+      <view class="detail">
+        <view class="title">{{ weather.today.suggestion[item].brief }}</view>
+        <view class="description">{{ weather.today.suggestion[item].details }}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

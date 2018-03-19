@@ -21,13 +21,13 @@
   justify-content: space-between;
 }
 .main .more-info > view {
-  width:40%;
+  width:45%;
   margin-top: 20rpx;
   display: inline-block;
 }
 .main .hourly {
   height: 160rpx;
-  padding: 20rpx 20rpx 40rpx;
+  padding: 20rpx;
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@
   flex-wrap: nowrap;
 }
 .hourly .wrap {
-  width: 1440px;
+  width: 2880rpx;
 }
 .hourly .hour {
   width: 120rpx;

@@ -11,7 +11,7 @@
         <text>°C</text>
       </view>
       <view class="more-info">
-        <view class="pm">PM25 {{ weather.now.air_quality.pm25 }}{{ weather.now.air_quality.quality }}</view>
+        <view class="pm">PM25 {{ weather.now.air_quality.city.pm25 }}{{ weather.now.air_quality.city.quality }}</view>
         <view class="wind-direction">风向 {{ weather.now.wind_direction }}</view>
         <view class="wind-power">风力 {{ weather.now.wind_scale }}</view>
         <view class="humidity">湿度 {{ weather.now.humidity }}</view>
